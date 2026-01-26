@@ -36,7 +36,7 @@ header .container ul li img{
 }
 header .container ul li a{
   text-decoration: none;
-  color: rgb(202, 202, 202);
+  color: rgb(190, 189, 189);
   font-size: 150%;
   font-weight: 500;
 }
@@ -65,8 +65,10 @@ header .container ul li a{
 }
 .texts .links ul li{
    display: inline;
-   margin-left: 3%;
    list-style: none;
+}
+.texts .links ul li:last-child{
+     margin-left: 3%;
 }
 .links ul li a{
   text-decoration: none;
@@ -85,7 +87,7 @@ header .container ul li a{
   background-size: cover;
   color: white;
   padding-top: 50px;
-  height: 600px;
+  height: 640px;
   padding: 60px  20px;
   margin-bottom: 50px;
   /* width: 100%; */
@@ -108,15 +110,17 @@ header .container ul li a{
   background-size: cover;
   height: 600px;
   padding: 20px;
-  margin-bottom: 50px;
 }
 
 /* grid section */
 .grid-section{
   display: grid;
   grid-template-areas: 
-   "watch card";
+    "watch card";
+  grid-template-columns: 1fr 1fr;
+  /* column-gap: 3rem; */
 }
+/* grid card */
 .grid-card{
   text-align: center;
   background-position: center;
@@ -124,6 +128,7 @@ header .container ul li a{
   background-size: cover;
   padding: 10px;
   height: 600px;
+  margin-block: 2rem;
 }
 .grid-card .description{
   margin: 20px;
@@ -132,14 +137,51 @@ header .container ul li a{
   font-size: 1.8rem;
   font-weight: lighter;
 }
-.grid-section .watch{
+.grid-card .links{
+  display: inline-block;
+}
+.grid-card .links ul{
+  display: flex;
+  text-align: center;
+}
+.grid-card .links li{
+  list-style: none;
+}
+.grid-card .links li:last-child{
+  margin-left: 3rem;
+}
+/* watch-card */
+.watch-card{
     background-image: url("../images/home/watch-series-5.jpg");
     grid-area: watch;
+    margin-inline: 2rem;
 }
-.grid-section card{
+/*card-card*/
+.card-card{
   background-image: url("../images/home/apple-card.jpg");
+  margin-right: 2rem;
 }
-
+/* tv-card */
+.tv-card{
+  background-image: url("../images/home/apple-tv-background.jpg");
+  margin-inline: 2rem;
+}
+.airpod-card{
+  background-image: url("../images/home/air-pods.jpg");
+  margin-right: 2rem;
+}
+.airpod-card .logo p{
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+.airpod-card .description{
+  color: white;
+}
+.mac-pro-card{
+  background-image: url("../images/home/mac-laptop.jpg");
+  margin-inline: 2rem;
+}
 
 
 @media only screen and (max-width: 600px){
