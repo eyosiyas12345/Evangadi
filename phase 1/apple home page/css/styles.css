@@ -68,7 +68,7 @@ header .container ul li a{
    margin-left: 3%;
    list-style: none;
 }
-section .texts .links ul li a{
+.links ul li a{
   text-decoration: none;
   font-size: 2rem;
   color: rgb(20, 78, 177);
@@ -110,6 +110,36 @@ section .texts .links ul li a{
   padding: 20px;
   margin-bottom: 50px;
 }
+
+/* grid section */
+.grid-section{
+  display: grid;
+  grid-template-areas: 
+   "watch card";
+}
+.grid-card{
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  height: 600px;
+}
+.grid-card .description{
+  margin: 20px;
+}
+.grid-card .description p{
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+.grid-section .watch{
+    background-image: url("../images/home/watch-series-5.jpg");
+    grid-area: watch;
+}
+.grid-section card{
+  background-image: url("../images/home/apple-card.jpg");
+}
+
 
 
 @media only screen and (max-width: 600px){
