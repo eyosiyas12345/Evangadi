@@ -34,11 +34,20 @@ header .container ul li img{
   width: 18px;
   opacity: 0.8;
 }
+header .container ul li img:hover{
+  opacity: 0.9;
+}
 header .container ul li a{
   text-decoration: none;
   color: rgb(190, 189, 189);
   font-size: 150%;
   font-weight: 500;
+}
+header .container ul li a:hover{
+  color: rgb(239, 239, 239);
+}
+header .container ul li a:active{
+  text-decoration: underline;
 }
 /* MacBook Pro section */
 #macbook-pro-section{
@@ -74,6 +83,12 @@ header .container ul li a{
   text-decoration: none;
   font-size: 2rem;
   color: rgb(20, 78, 177);
+}
+section .links ul li a::after{
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content : "\f105";
+  padding-left: 8px;
 }
 #macbook-pro-section .texts .links ul li a:hover{
   color: black;
@@ -185,7 +200,7 @@ header .container ul li a{
   background-image: url("../images/home/air-pods.jpg");
   margin-right: 2rem;
 }
-.airpod-card .logo p{
+.airpod-card .logo{
   font-size: 4rem;
   font-weight: bold;
   color: white;
@@ -193,16 +208,30 @@ header .container ul li a{
 .airpod-card .description{
   color: white;
 }
-.mac-pro-card{
-  background-image: url("../images/home/mac-laptop.jpg");
+/* mac-pro-card */
+.macbook-pro-card{
+  background-color: white;
   margin-inline: 2rem;
 }
+/* ipad-card */
+.ipad-card{
+  background-color: rgb(243, 243, 243);
+}
+.ipad-card .image-container img{
+  width: 150%;
+}
 /* footer */
-footer{
+
+.footer-container{
   background-color: rgb(249, 249, 249);
 }
+footer{
+  width: 80%;
+  margin:auto;
+  text-align: left;
+}
 footer div{
-    width: 80%;
+    /* width: 80%; */
     margin: 10px auto 10px auto;
 }
 footer .long-text{
@@ -245,11 +274,27 @@ footer .last{
 footer .last div:nth-of-type(1){
   font-size: 1.4rem;
 }
-footer .last div:nth-of-type(2){
+footer .last div:nth-of-type(2) ul{
   display:flex;
+}
+footer .last div:nth-of-type(2) ul li{
+  list-style: none;
+  padding-right: 0.5rem;
+  margin-left: 0.5rem;
+  border-right:1px solid gray;
+}
+footer .last div:nth-of-type(2) a{
+  color: gray;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+footer .last div:nth-of-type(2) a:hover{
+  text-decoration: underline;
 }
 footer .last div:nth-of-type(3){
   display: flex;
+  align-items: center;
+  margin-top: 0;
 }
 .flag-container{
   width: 25px;
@@ -264,6 +309,7 @@ footer .last div:nth-of-type(3) img{
   width: 100%;
 }
 
+
 @media only screen and (max-width: 600px){
 
   *{
@@ -271,6 +317,12 @@ footer .last div:nth-of-type(3) img{
   }
   header .container ul li img{
    width: 16px;
+  }
+  .grid-section{
+    display: block;
+  }
+  .card{
+    display: block;
   }
 }
 @media only screen and (max-width: 400px){
