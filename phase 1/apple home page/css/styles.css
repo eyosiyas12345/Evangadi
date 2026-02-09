@@ -4,7 +4,8 @@
   box-sizing: border-box;
   max-width: 100%;
   font-size: 10px;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
 }
 section{
   text-align: center;
@@ -144,23 +145,26 @@ section .links ul li a::after{
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px;
-  padding-top: 50px;
+  padding-top: 20px;
   height: 600px;
   margin-block: 1rem;
+  word-spacing: 0.25rem;
 }
 .grid-card .description{
-  margin: 20px;
+  margin: 15px;
 }
 .grid-card .description p{
   font-size: 2rem;
   color: rgb(65, 65, 65);
 }
 .grid-card .links{
-  display: inline-block;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
 }
 .grid-card .links ul{
   display: flex;
-  text-align: center;
+  place-content: center;
 }
 .grid-card .links li{
   list-style: none;
@@ -222,6 +226,10 @@ color: rgb(232, 219, 197);
   background-size: initial;
   background-position: bottom;
   margin-inline: 2rem;
+}
+.macbook-pro-card .name{
+  font-size: 5rem;
+  font-family: sans-serif;
 }
 /* ipad-card */
 .ipad-card{
