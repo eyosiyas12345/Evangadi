@@ -45,6 +45,7 @@ header .container ul li a{
 }
 header .container ul li a:hover{
   color: rgb(239, 239, 239);
+  transition: ease-in-out 0.3s;
 }
 header .container ul li a:active{
   text-decoration: underline;
@@ -54,6 +55,7 @@ header .container ul li a:active{
   padding-top: 5px;
   margin-bottom: 30px;
   margin-bottom: 0px;
+  background-color: #fafafa;
 }
 #macbook-pro-section .texts{
   margin: 20px auto 30px auto;
@@ -133,7 +135,7 @@ section .links ul li a::after{
   grid-template-areas: 
     "watch card";
   grid-template-columns: 1fr 1fr;
-  /* column-gap: 3rem; */
+  column-gap: 0.25rem;
 }
 /* grid card */
 .grid-card{
@@ -142,15 +144,16 @@ section .links ul li a::after{
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px;
+  padding-top: 50px;
   height: 600px;
-  margin-block: 2rem;
+  margin-block: 1rem;
 }
 .grid-card .description{
   margin: 20px;
 }
 .grid-card .description p{
-  font-size: 1.8rem;
-  font-weight: lighter;
+  font-size: 2rem;
+  color: rgb(65, 65, 65);
 }
 .grid-card .links{
   display: inline-block;
@@ -180,24 +183,28 @@ section .links ul li a::after{
 .tv-card{
   background-image: url("../images/home/apple-tv-background.jpg");
   margin-inline: 2rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.tv-card .text-container{
- height: 80%;
- place-content: center;
+
+.tv-card .watch-more a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-top: 5rem;
 }
-.tv-card .text-container .description p:last-child{
-  margin-top: 1%;
-  font-size:42px;
-  /* font-weight: bold; */
-  font-family: serif;
-}
-.tv-card .text-container .links{
- position: relative;
- bottom: 0;
- margin-top:  20px;
+.tv-card .watch-more a::after{
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "\f144";
+  padding-left: 15px;
 }
 .airpod-card{
   background-image: url("../images/home/air-pods.jpg");
+  background-size: initial;
+  background-position: bottom;
+  background-color: #000;
   margin-right: 2rem;
 }
 .airpod-card .logo{
@@ -205,17 +212,21 @@ section .links ul li a::after{
   font-weight: bold;
   color: white;
 }
-.airpod-card .description{
-  color: white;
+.airpod-card .description p{
+color: rgb(232, 219, 197);
 }
 /* mac-pro-card */
 .macbook-pro-card{
-  background-color: white;
+  background-image: url("../images/home/macbook-pro.jpg");
+  background-color: #fafafa;
+  background-size: initial;
+  background-position: bottom;
   margin-inline: 2rem;
 }
 /* ipad-card */
 .ipad-card{
-  background-color: rgb(243, 243, 243);
+  /* background-color: rgb(243, 243, 243); */
+  background-image: url("../images/home/new-ipad.jpg");
 }
 .ipad-card .image-container img{
   width: 150%;
@@ -232,7 +243,7 @@ footer{
 }
 footer div{
     /* width: 80%; */
-    margin: 10px auto 10px auto;
+    margin: 0px auto 10px auto;
 }
 footer .long-text{
   font-size: 1.4rem;
