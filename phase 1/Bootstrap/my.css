@@ -10,6 +10,15 @@
 .red{
   background-color: red;
 }
+.pink{
+  background-color: pink;
+}
+.grey{
+  background-color: grey;
+}
+.puple{
+  background-color: purple;
+}
 div{
   border: 1px solid black;
 }
