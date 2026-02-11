@@ -1,0 +1,29 @@
+/* Style for development purpose. */
+
+div{
+  border: 1px solid rgb(255, 0, 0);
+}
+.green{
+  background-color: green;
+}
+.yellow{
+  background-color: yellow;
+}
+.pink{
+  background-color: pink;
+}
+.blue{
+  background-color: lightblue;
+}
+.grey{
+  background-color: grey;
+}
+.purple{
+  background-color: purple;
+}
+section{
+  background-color: lightgrey;
+}
+p{
+  border: 1px solid blue;
+}

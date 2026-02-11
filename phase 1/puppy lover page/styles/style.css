@@ -31,10 +31,8 @@ header{
   
 }
 .puppies-featured{
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
-  
+  justify-content: center;
 }
 .missing-puppy{
   background-color: lightgray;
