@@ -31,6 +31,9 @@ header .container ul{
   justify-content: space-between;
   align-items: center;
 }
+.menu-bar{
+  display: none;
+}
 header .container ul li{
   list-style: none;
 }
@@ -357,4 +360,36 @@ footer .last div:nth-of-type(3) p{
   header .container {
     width: 90%;
   }
+  .text-link{
+    display:none;
+  }
+  footer .links .container .category ul li{
+  display: none;
 }
+footer .links .category ul li{
+    display: none;
+}
+footer .links{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menu-bar{
+  display: block;
+}
+i{
+  font-size: 3rem;
+  font-weight: bold;
+}
+footer .long-text{
+  font-size: 2rem;
+}
+footer .links .category p{
+  font-size: 2rem;
+}
+.links{
+  font-size: 2rem;
+}
+}
+/* footer .links .categroy P::after{
+} */
