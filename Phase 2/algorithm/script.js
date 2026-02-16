@@ -125,3 +125,36 @@ let canBeNested = (arr1, arr2) => {
   }
 }
 console.log(canBeNested([0,2,4.9],[-1,5]));
+
+
+// ++++++incremented number++++++
+function addition(num){
+  let incremented = num +1;
+	return incremented;
+}
+console.log(" 2 + 1 = "+addition(2));
+// +++++++biwise operation+++++++
+function bitwise (num1, num2){
+  if(isNaN(num1) || isNaN(num2)){
+    return "not a number";
+  }
+  let bitnum1 = num1.toString(2);
+  let bitnum2 = num2.toString(2);
+  return bitwiseAND(bitnum1, bitnum2);  
+}
+
+let bitwiseAND = (bitstr1, bitstr2) => {
+  let resbit = "";
+    for(let i=bitstr2.length-1; i>=0; i--){
+      if(bitstr1.charAt(i)== 1 && bitstr2.charAt(i)== 1){
+        resbit += "1" ;
+      }else{
+        resbit += "0"; 
+      }
+  }
+  let splitted = resbit.split('');
+  let reversed = splitted.reverse();
+  let joined = reversed.join('');
+  return joined;
+}
+console.log(bitwise(2,7));
