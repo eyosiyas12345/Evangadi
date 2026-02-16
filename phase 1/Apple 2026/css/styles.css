@@ -244,6 +244,16 @@ color: rgb(232, 219, 197);
 .ipad-card .image-container img{
   width: 150%;
 }
+
+/* endless entertain */
+.movie-thumbnail-1{
+  background-image: url("../images/movie_thumbnails/1250x668sr\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  margin: 1rem;
+}
+
 /* footer */
 
 .footer-container{
