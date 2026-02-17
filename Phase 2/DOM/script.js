@@ -1,36 +1,48 @@
-console.log("DOM what we will cover\n 1, selecting elements w/c could be in three type: individual,multiple and between.");
-/******SELECTING HTML ELEMENTS USING DOM *******/
-// To Select inidividual elements (2 ways).
-// 1,document.getElementById("id-name");
-// _______ element.className; return class name;
+// console.log("DOM what we will cover\n 1, selecting elements w/c could be in three type: individual,multiple and between.");
+// /******SELECTING HTML ELEMENTS USING DOM *******/
+// // // To Select inidividual elements (2 ways).
+// // // 1,document.getElementById("id-name");
+// // // _______ element.className; return class name;
 
-// var head = document.getElementById("red");
-// console.log(head);
-// console.log(head.className);
-// head.className = "blue";
-// console.log("between");
-// console.log(head.classList);
+// // var head = document.getElementById("red");
+// // console.log(head);
+// // console.log(head.className);
+// // head.className = "blue";
+// // console.log("between");
+// // console.log(head.classList);
 
-// 2,document.querySelector("#write .css .slector")
-var title = document.querySelector(".green");
-// console.log(title);
-title.className = "red";
+// // //2,document.querySelector("#write .css .slector")
+// var title = document.querySelector(".green");
+// // //console.log(title);
+// title.className = "red";
 
-/****SELECTING MULTIPLE ELMENETS (3 ways) */
-// 1, document.getElementByClassName
-let classes = document.getElementsByClassName("test");
-console.log(classes);
-// 2,document.getElementbyTagName
-let tags =document.getElementsByTagName("li");
-console.log(tags);
-// 3,document.querySelectorAll("css like selector");
-let queries = document.querySelectorAll(".query");
-console.log(queries);
+// /****SELECTING MULTIPLE ELMENETS (3 ways) */
+// // //1, document.getElementByClassName
+// let classes = document.getElementsByClassName("test");
+// console.log(classes);
+// // //2,document.getElementbyTagName
+// let tags =document.getElementsByTagName("li");
+// console.log(tags);
+// // //3,document.querySelectorAll("css like selector");
+// let queries = document.querySelectorAll(".query");
+// console.log(queries);
 
-/*****METHODS SELECT SPECIFIC ELEMENT FROM THE MULTIPLE FETCH */
-// 1, RECOMMENDED TheFetched[0] -- treat like array.
-console.log(queries[0]);
-// 2, TheFetched.item(index);
-console.log(queries.item(1));
+// //__METHODS SELECT SPECIFIC ELEMENT FROM THE MULTIPLE FETCH */
+// // //1, RECOMMENDED TheFetched[0] -- treat like array.
+// console.log(queries[0]);
+// // //2, TheFetched.item(index);
+// console.log(queries.item(1));
 
-
+/************Live DOM  vs Static DOM ************************/
+// //eg. document.getElementByClassName("class") -- is live dom.
+// var test = document.getElementsByClassName("test");
+// console.log(test);
+// test[0].className = "red";
+// console.log(test);
+// test[0].className = "blue"
+// console.log(test);
+// console.log("\n by tag name")
+// var test2 = document.getElementsByTagName("li");
+// console.log(test2);
+// test2[0].className = "pink";
+// console.log(test2);
