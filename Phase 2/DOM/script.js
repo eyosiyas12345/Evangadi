@@ -59,3 +59,5 @@
 // console.log(lj.firstElementChild);
 // console.log(lj.lastElementChild);
 /****************************************************/
+
+// ALTERING VALUES AND PROPERTIES IN JAVASCRTPT
