@@ -1,5 +1,7 @@
 // console.log("DOM what we will cover\n 1, selecting elements w/c could be in three type: individual,multiple and between.");
+
 // /******SELECTING HTML ELEMENTS USING DOM *******/
+///////////////////////////////////////////////////////////////
 // // // To Select inidividual elements (2 ways).
 // // // 1,document.getElementById("id-name");
 // // // _______ element.className; return class name;
@@ -46,3 +48,14 @@
 // console.log(test2);
 // test2[0].className = "pink";
 // console.log(test2);
+
+/****TRAVERSING BETWEEN ELEMENTS */
+// //parentNode
+// let lj = document.querySelector(".test-li");
+// console.log(lj); //return the li as object
+// console.log(lj.parentNode); //return ul as dom object.
+// console.log(lj.previousElementSibling);
+// console.log(lj.nextElementSibling);
+// console.log(lj.firstElementChild);
+// console.log(lj.lastElementChild);
+/****************************************************/
