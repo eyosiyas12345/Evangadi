@@ -1,6 +1,6 @@
 // console.log("DOM what we will cover\n 1, selecting elements w/c could be in three type: individual,multiple and between.");
 
-// /******SELECTING HTML ELEMENTS USING DOM *******/
+// /******SELECTING HTML ELEMENTS USING DOM and ALTERING THE SELECTED*******/
 ///////////////////////////////////////////////////////////////
 // // // To Select inidividual elements (2 ways).
 // // // 1,document.getElementById("id-name");
@@ -91,6 +91,43 @@
 // console.log(first);
 // first.className = "first-class";
 // console.log(first);
-// //++++++++++++++++++++++++++++++++++++++++++++=
+// //++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++STYLING ELEMENTS IN JAVASCRIPT++++++++++++++
+// let parent = document.getElementsByTagName("ul");
+// console.log(parent);
+// let first = parent.firstElementChild;
+// console.log(first);
+// first.style.backgroundColor = "red";
+///////////////////////////////////////////////////////
 
 
+//*******NEXT CLASS: EVENT HANDLING**********************/
+// //+++++EVENT TYPES: only applied to specific single elemt.
+// //windows event  :resize,load,unload,scroll
+// window.addEventListener('load',()=>{
+//   console.log("loaded success");
+// })
+// window.addEventListener('scroll',()=>{
+//   console.log("scroll");
+// })
+// window.addEventListener('resize',()=>{
+//   console.log("resized");
+// })
+// //mouse events  :click,dblclick,mouse
+// let mybtn = window.document.getElementById("btn");
+// mybtn.addEventListener("click",()=>{
+//   console.log("clicked");
+// })
+// mybtn.addEventListener("mousedown",()=>{
+//   console.log("mouse down");
+// })
+// mybtn.addEventListener('mouseleave',()=>{
+//   console.log("mouse hover");
+// })
+//keyboard events  :keydown,keyup
+
+//form events  : submit,change
+let submitBtn = document.querySelector("form");
+submitBtn.addEventListener("submit",()=>{
+  console.log("submited");
+})

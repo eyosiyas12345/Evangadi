@@ -21,14 +21,25 @@
     .bold{
       font-weight: bold;
     }
+    div{
+      width: 300px;
+      height: 500px;
+    }
+    button{
+      background-color: aquamarine;
+      color: lightslategray;
+      border-radius: 10px;
+      padding-inline: 31px;
+      border:none;
+    }
   </style>
 </head>
 <body>
-  <h1 id="title" class="green">Javascript Dom</h1>
-  <h2 class="test">Lists</h2>
+  <h1 id="title" class="green">events</h1>
+  <h2 ">Lists</h2>
   <ul>
     <li id="one" class="test pink">Apple</li>
-    <ol id="two" class="query green test-li">About
+    <ol id="two" class="query green test">About
       <li>Us</li>
       <li>We</li>
       <li>Me</li>
@@ -38,6 +49,22 @@
     <li id="five">Orange</li>
     <li id="six">Strowberry</li>
     <li id="seven">Juice</li>
+    <button id="btn">click me</button>
+    <form action="#">
+      <fieldset>
+      <label for="name">
+        <input type="text" placeholder="Enter your name">
+      </label>
+      <label for="email">
+        <input type="email" placeholder="Enter your email">
+      </label>
+      <input type="submit" name="submit" value="join" id="submit-btn">
+      </fieldset>
+    </form>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </ul>
 </body>
 </html>
