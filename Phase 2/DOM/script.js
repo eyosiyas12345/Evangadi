@@ -60,4 +60,37 @@
 // console.log(lj.lastElementChild);
 /****************************************************/
 
-// ALTERING VALUES AND PROPERTIES IN JAVASCRTPT
+
+// console.log(".");
+// //*******ALTERING VALUES AND PROPERTIES IN JAVASCRTPT*****
+
+// //+++++++++access and alter text nodes (writting,content)
+// let orange = document.getElementById("five");
+// console.log(orange);
+// orange.textContent = "Altered"
+
+// //++++++Working with html content.++++++
+// //to add, remove and update entire html block.
+// // //createElement()
+// let someLetter = document.createElement("p");
+// // //textContent;
+// someLetter.textContent= "Abebe beso bela";
+// console.log(someLetter);
+// // //appendChild(); writting as last child of the selected element
+// document.body.appendChild(someLetter);
+// // //removeChild()
+// console.log(document.body.childNodes);
+// document.body.removeChild(someLetter);
+// //innerHtml;
+
+// // ++++++working with attributes.++++++++++++++
+// // className, id, classList.add("newClassName")
+// const first = document.getElementById("one");
+// first.classList.add("bold");
+// first.id = "first";
+// console.log(first);
+// first.className = "first-class";
+// console.log(first);
+// //++++++++++++++++++++++++++++++++++++++++++++=
+
+
