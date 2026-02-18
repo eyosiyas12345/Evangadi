@@ -1,0 +1,4 @@
+This folder Cover my Evangadi learning notes of js two topics
+
+  - DOM manipulation
+  - Event handling
