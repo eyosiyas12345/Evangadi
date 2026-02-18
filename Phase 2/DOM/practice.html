@@ -53,14 +53,16 @@
     <form action="#">
       <fieldset>
       <label for="name">
-        <input type="text" placeholder="Enter your name">
+        <input type="text" placeholder="Enter your name" id="first-input">
       </label>
       <label for="email">
         <input type="email" placeholder="Enter your email">
       </label>
-      <input type="submit" name="submit" value="join" id="submit-btn">
+      <input type="submit" name="submit" value="join"  onkeydown="bgChanger()">
       </fieldset>
     </form>
+    <button onclick="bgChanger()">click me to change background</button>
+    <p id="second-btn">change background by hover</p>
     <div></div>
     <div></div>
     <div></div>

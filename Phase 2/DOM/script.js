@@ -101,7 +101,8 @@
 ///////////////////////////////////////////////////////
 
 
-//*******NEXT CLASS: EVENT HANDLING**********************/
+//****************EVENT****EVENT****EVENT************************/
+
 // //+++++EVENT TYPES: only applied to specific single elemt.
 // //windows event  :resize,load,unload,scroll
 // window.addEventListener('load',()=>{
@@ -126,8 +127,33 @@
 // })
 //keyboard events  :keydown,keyup
 
-//form events  : submit,change
-let submitBtn = document.querySelector("form");
-submitBtn.addEventListener("submit",()=>{
-  console.log("submited");
-})
+// //form events  : submit,change, focus
+// handleFocus = (event)=>{
+//   console.log("focus");
+//   event.target.style.backgroundColor = "lightgreen";
+//   event.target.style.color = "white";
+//   event.target.style.border = "none";
+//   console.log(event);
+// }
+// let submitBtn = document.querySelector("form");
+// submitBtn.addEventListener("submit",()=>{
+//   console.log("submited");
+// })
+// input1 = document.getElementById("first-input")
+// input1.addEventListener("focus", handleFocus)
+
+//++++++++++EVENT HANDLING//+++++++++++++++++++++++
+//what 3 steps: 1)select element, 2)attach event, 3)write script.
+//How 3 ways: 1w)HTML event handler(attribute)
+let bgChanger = () =>{
+  document.body.style.backgroundColor = "lightgreen";
+}
+//How 3 ways: 2w)Traditional DOM event handler
+let removeBg = () =>{
+  document.body.style.backgroundColor = "";
+}
+let hoverBtn = document.getElementById("second-btn");
+hoverBtn.onmouseover = function (){
+  hoverBtn.style.color = "red";
+};
+
