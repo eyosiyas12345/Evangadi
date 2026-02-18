@@ -144,16 +144,36 @@
 
 //++++++++++EVENT HANDLING//+++++++++++++++++++++++
 //what 3 steps: 1)select element, 2)attach event, 3)write script.
-//How 3 ways: 1w)HTML event handler(attribute)
-let bgChanger = () =>{
-  document.body.style.backgroundColor = "lightgreen";
-}
-//How 3 ways: 2w)Traditional DOM event handler
-let removeBg = () =>{
-  document.body.style.backgroundColor = "";
-}
-let hoverBtn = document.getElementById("second-btn");
-hoverBtn.onmouseover = function (){
-  hoverBtn.style.color = "red";
-};
+// //+++How 3 ways: 1w)HTML event handler(attribute)
+// let bgChanger = () =>{
+//   document.body.style.backgroundColor = "lightgreen";
+// }
+// //+++How 3 ways: 2w)Traditional DOM event handler
+// let removeBg = () =>{
+//   hoverBtn.style.color = "red";
+//   document.body.style.backgroundColor = "";
+// }
+// let hoverBtn = document.getElementById("second-btn");
+// hoverBtn.onmouseover = removeBg; // bit mistakes come from calling the function removeBg(), instead of referencing it.
+//+++How 3 ways: 3w)Modern DOM event listener
+// let modernFunction =()=>{
+//   console.log("I am modern");
+//   modern.textContent = "OUTCH!! :()";
+//   modern.style.backgroundColor = "red";
+//   modern.style.color= "white";
+// }
+// let modern = document.getElementById("third-btn");
+// modern.addEventListener("click",modernFunction);
+// ++++ Halt Default Behaviour ++++
+//preventDefault()
+// function defaultChanged (event){
+//  event.preventDefault();
+//  console.log("prevent Default")
+// }
+// let myForm = document.getElementById("myform");
+// myForm.addEventListener("submit",defaultChanged(e));
+//stopPropagation()
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 
+//***************Exercise DOM & Event LIstener*****************/
