@@ -1,0 +1,31 @@
+input{
+  margin-bottom: 20px;
+}
+.my-button:hover{
+  opacity: 0.6;
+}
+.my-button:active{
+  opacity: 0.8;
+}
+form{
+  max-width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+.display-error{
+  background-color: pink;
+  text-align: center;
+  display: block;
+  max-width: 50%;
+  margin: auto;
+  border: 1px solid red;
+
+}
+.display-success{
+  background-color: lightgreen;
+  text-align: center;
+  display: block;
+  max-width: 50%;
+  margin: auto;
+  border: 1px solid green;
+}
