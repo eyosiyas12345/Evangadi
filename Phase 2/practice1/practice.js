@@ -31,5 +31,5 @@ let changeTheme =()=>{
   let body = document.body;
   body.classList.toggle("black");
 }
-form1.addEventListener("submit", submit);
+form1.addEventListener("submit", setTimeout( submit,1000));
 theme.addEventListener("click",changeTheme);
