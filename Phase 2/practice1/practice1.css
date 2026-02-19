@@ -19,7 +19,6 @@ form{
   max-width: 50%;
   margin: auto;
   border: 1px solid red;
-
 }
 .display-success{
   background-color: lightgreen;
@@ -28,4 +27,20 @@ form{
   max-width: 50%;
   margin: auto;
   border: 1px solid green;
+}
+.hidden{
+  display: none;
+}
+.theme{
+  border: none;
+}
+.theme:hover{
+  opacity: 0.6;
+}
+.theme:active{
+  opacity: 0.8;
+}
+.black{
+  background-color: black;
+  color: white;
 }
