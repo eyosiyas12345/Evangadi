@@ -8,6 +8,7 @@
  *
  * Date: 2026-01-18T00:20Z
  */
+
 ( function( global, factory ) {
 
 	"use strict";
