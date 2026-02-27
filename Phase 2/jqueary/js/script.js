@@ -1,4 +1,3 @@
-
 // variables
 let html = $("html");
 let body = $("body");
@@ -6,6 +5,7 @@ let header = $("h1");
 let inputs = $("input");
 let listSec = $(".todo-list");
 let listContainer = $(".lists-container");
+let listTemplate = $(".template-list");
 let addSec = $(".todo-add")
 let description = $(".description");
 let addBtn = $(".add-btn");
@@ -71,3 +71,4 @@ function deleteTask(){
     $(this).closest('.list').remove();
    });//$(ul).on('click','.delete-btn-class', function(){--action when btn})
 }
+// problem : how can I hide/remove manually coded <li> section. 
