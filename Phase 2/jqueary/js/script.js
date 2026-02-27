@@ -47,11 +47,15 @@ function original(){
   addBtn.show();
 }
 function submitTask(event){
+  if(taskInput.val() === ""){
+    console.log("Input is empty. Please enter a task.");
+    return;
+  }
   event.preventDefault();
   let newTodo = document.createElement("li");
   newTodo.className = "list";
   let inputedTask = taskInput.val();
-  newTodo.innerHTML = 
+  newTodo.innerHTML= 
   `<div class="row">
         <div class="description col-8 fw-bold">${inputedTask}
         </div>
@@ -63,6 +67,7 @@ function submitTask(event){
 }
 
 function deleteTask(){
-  let todo = deleteBtn.parent().parent();
-  todo.hide();
+   listContainer.on("click",".delete-btn", function (){
+    $(this).closest('.list').remove();
+   });//$(ul).on('click','.delete-btn-class', function(){--action when btn})
 }
