@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <title>jQuery</title>
+</head>
+<body>
+ <h1 class="text-center bg-primary text-white p-3">
+  Todo App
+ </h1>
+ <!-- todo list section -->
+ <section class="todo-list p-5 container">
+  <h2 class="text-center">Todo Lists</h2>
+  <ul class="lists-container">
+    <li class="list">
+      <div class="row">
+        <div class="description col-8">Lorem ipsum dolor sit amet.
+        </div>
+        <button class="delete-btn btn col-3 p-2 bg-danger text-white fw-bold">
+          Delete
+        </button>
+      </div>
+    </li>
+  </ul>
+
+<!-- todo input section -->
+ </section>
+ <button class="add-btn btn bg-success text-white p-2 fw-bold  m-auto col-2">Add</button>
+
+ <section class="todo-add mt-4">
+  <form action="" class="row d-flex flex-column align-items-center">
+    <input type="task" name="task" id="task-input" placeholder="Task"
+    class="col-8">
+    <input type="submit" value="Add" 
+    class="input-add-btn btn bg-success text-white p-2 fw-bold  m-auto col-2">
+  </form>
+ </section>
+
+
+<!-- Javascript -->
+ <script src="js/jquery-4.0.0.js"></script>
+ <script src="js/script.js"></script>
+
+</body>
+</html>

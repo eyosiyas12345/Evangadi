@@ -1,0 +1,20 @@
+.blue{
+  background:blue;
+  color: white;
+}
+.yellow{
+  background-color: yellow;
+}
+.pink{
+  background-color: pink;
+}
+.red{
+  background-color: rgb(255, 26, 26);
+}
+.green{
+  background-color: green;
+  color: white;
+}
+.list{
+  margin: 10px;
+}
