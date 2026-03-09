@@ -38,3 +38,25 @@ document.body.style.color = "grey";
 //   // let myPromise = new Promise(){
 //   //    resolve, reject
 //   // }
+
+// +_++++++++++++++++++_RegEx+++++++++++++++_++++++++=
+
+
+
+
+let str = "as a human 985 lorem ipsum I 8877 love Ehiopia , as 097 it is a country for 78-6 origin of human kind rem 98-5 6%6.";
+console.log(str.search(/ehiopia/i));
+console.log(str.replace(/ehiopia/i, "kenya"));
+console.log(str.match(/hum/gi));
+let count = 0;
+for(let i=0; i<str.length; i++){
+  if (str.match(/\d{3}/) !== null){
+     count = str.match(/\d{3}/g).length;
+  }
+}
+console.log("RegEx object methods");
+var pattern1 = /\d{2}-\d/g;
+var n = pattern1.exec(str);
+console.log(n);
+
+
