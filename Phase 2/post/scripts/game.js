@@ -7,21 +7,29 @@ function render (data){
  let container = document.querySelector(".cards-container");
  data.forEach((item)=>{
   const card = `
-  <div class="card">
-  
-    <div class="img-container">
-      <img src="${item.thumbnail}" alt="${item.title}">
+<div class="card">
+<div class="card-flipper">
+
+    <div class="card-front">
+        <img class="img" src="${item.thumbnail}" alt="${item.title}">
     </div>
 
-    <div class="title-container">
-    <a href=".././Snake Game/index.html">
-        ${item.title}
+    <div class="card-back">
+    <a href="${item.link}">
+        <span> Play ${item.title}</span>
     </a>
     </div>
-
-  </div>`;
+   
+</div>
+</div>
+      `;
   container.innerHTML += card;
- })
+ });
+ 
 }
 
+    //   <div class="title-container">
+    //       ${item.title}
+    //   </div>
+//  <a href="${item.link}"></a>
 render(gameCards);
