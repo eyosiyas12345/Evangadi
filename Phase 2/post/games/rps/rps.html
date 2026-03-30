@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta  name="Author" content="Eyosiyas Gezahegn">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="rps.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/common.css">
+
+  <link rel="icon" href="https://img.icons8.com/fluency-systems-filled/48/40C057/hand-rock.png">
   <script src="rps.js" defer> </script>
   <title>Rock Paper Scissor Game</title>
   </head>
-
-  <body>
-    <div class="container">
+  
+  <body class="russo-one-regular">
+    <div id="header"></div>
+    <div class="container"> 
       <!-- upper sub-container-->
-      <div>
-    <p class="game-title">Rock Paper Scissors</p>
-    
-    <button onclick="playGame('Rock');" class="emoji-button"><img src="images/Rock-emoji.png" alt="" class="emoji"></button>
+          <div>
+        <p class="game-title">Rock Paper Scissors</p>
+        
+        <button onclick="playGame('Rock');" class="emoji-button"><img src="images/Rock-emoji.png" alt="" class="emoji"></button>
 
-    <button onclick="playGame('Paper')"class="emoji-button"><img src="images/Paper-emoji.png" alt="" class="emoji"></button>
+        <button onclick="playGame('Paper')"class="emoji-button"><img src="images/Paper-emoji.png" alt="" class="emoji"></button>
 
-    <button onclick="playGame('Scissor')"class="emoji-button"><img src="images/Scissor-emoji.png" alt="" class="emoji"></button>
-      </div>
+        <button onclick="playGame('Scissor')"class="emoji-button"><img src="images/Scissor-emoji.png" alt="" class="emoji"></button>
+          </div>
 <!--end of upper-->
 
 <!--lower sub-container-->
@@ -29,10 +38,12 @@
     <p class="js-moves moves">
     </p>
     <p class="js-score"></p>
-  <button onclick="reset_score()" class="reset-button">Reset Score</button>
-  <button class="auto-button js-auto-button" onclick="autoplay()">Auto Play</button>
+  <button onclick="reset_score()" class="reset-button russo-one-regular">Reset Score</button>
+  <button class="auto-button js-auto-button russo-one-regular" onclick="autoplay() ">Auto Play</button>
 </div>
 
 </div>
+
+<script src="/scripts/header.js"></script>
   </body>
 </html>

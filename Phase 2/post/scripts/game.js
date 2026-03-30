@@ -1,9 +1,22 @@
 import {gameCards} from './data.js';
 
-console.log(gameCards);
+//variables
+const textToWrite = "Games";
+const targetElement = document.querySelector("#text-type");
+const typingSpeed = 500;
+let index = 0;
 
+function typeWriter(){
+   if(index < textToWrite.length){
+     targetElement.innerHTML += textToWrite.charAt(index);    
+    index ++;
+   }
+   setInterval(typeWriter, typingSpeed);
+}
+typeWriter();
+//
 function render (data){
- console.log("to render a page");
+ console.log("to render a card");
  let container = document.querySelector(".cards-container");
  data.forEach((item)=>{
   const card = `
@@ -33,3 +46,5 @@ function render (data){
     //   </div>
 //  <a href="${item.link}"></a>
 render(gameCards);
+
+

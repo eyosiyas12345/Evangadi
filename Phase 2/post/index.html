@@ -1,47 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Games</title>
-  <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="style.css">
+  <title>EyosiGames</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/40C057/controller.png">
 </head>
-<body>
-  <header class="container-fluid p-1 mb-5">
-    
-    <ul>
-      <li>
-        <a href="index.html">
-          Eyosi Games
-        </a>
-      </li>
-    </ul>
-    
-    <ul>
-      <li>
-        <a href="games/snake/snake.html">
-          Snake
-        </a>
-      </li>
-      <li>
-        <a href="games/space/space.html">
-          Space Invaders
-        </a>
-      </li>
-      <li>
-        <a href="games/rps/rps.html">
-          Rock Papper Scissor
-        </a>
-      </li>
-  </ul>
-  </header>
-  <p class="text-orange">Games</p>
+<body class="russo-one-regular">
+  <div id="header"></div>
+  
+  <p id="text-type"></p>
   <article class="cards-container fluid-container">
     <!--added from js -->
   </article>
 
   <!-- javascript -->
    <script type="module" src="scripts/game.js"></script>
+   <script src="scripts/header.js"></script>
 </body>
 </html>

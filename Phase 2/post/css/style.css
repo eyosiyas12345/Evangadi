@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -5,37 +6,13 @@
 }
 
 body{
-  background-image: url('images/bg4.jpg');
+  background-image: url('../images/bg4.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
-}
-header, footer{
-  background-color: #72727266;
-  position: sticky;
-  color: #88b54f;
-  font-weight: bold;
-  /* font-size: 2rem; */
-  font-family: sans-serif;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 30px;
-}
-header ul{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  
-}
-ul li{
-  list-style: none;
-}
-ul li a{
-  text-decoration: none;
-  color: green
+  padding-bottom: 1rem ;
 }
 
 article{
@@ -69,6 +46,9 @@ article a{
 .card:nth-of-type(1){
   flex: 1 250px;
   animation-delay: 0.2s;
+}
+.card:nth-of-type(1) img{
+  object-fit: top;
 }
 .card:nth-of-type(2){
   flex: 1 250px;
@@ -108,6 +88,7 @@ text-align: center;
   transform: rotateY(180deg);
   font-weight: bold;
   font-size: 1.5rem;
+  transition: transform 0.3s ease-out;
 }
 img{
   width: 100%;
@@ -129,20 +110,29 @@ img{
   transform: rotateY(180deg);
   cursor: pointer;
 }
-
-
-  /* //bootstrap */
-.text-orange{
-  color: #88b54f;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2rem;
+/* active */
+.card:active .card-back{
+  opacity: 0.2;
 }
 
-@media (min-width: 600px ) {
+  /* //bootstrap */
+#text-type{
+  color: #618631;
+  -webkit-text-stroke: .01px rgba(255,255,255,0.5);
+  text-align: center;
+  font-weight: bold;
+  font-size: 5rem;
+  margin: 4rem;
+  white-space: nowrap;
+  /* animation: blink 0.3s steps(2, start) infinite; */
+  /* border-right: 2px solid rgba(255,255,255,0.5); */
+}
 
-  .text-orange{
-    font-size: 4rem;
+@media (max-width: 768px ) {
+
+  #text-type{
+    font-size: 3rem;
+    margin: 3rem;
   }
 }
 @keyframes fadeInUp {
@@ -154,4 +144,4 @@ img{
     opacity: 1;
     transform: translateY(0px);
   }
-}
+} 

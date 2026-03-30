@@ -4,14 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake Game</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="snake.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="icon" href="https://img.icons8.com/emoji/96/snake-emoji.png">
   </head>
-  <body>
+  <body class="russo-one-regular">
+    <div id="header"></div>
+
+    <div class="game-area">
       <canvas id="canva" width="400px" height="400px"></canvas>
       <p id="score">0</p>
-      <button id="resetBtn">Reset</button>
+      <button id="resetBtn" class="russo-one-regular">Reset</button>
 
-    <!-- javascript -->
+<!-- For mobile users -->
+      <div class="mobile-controls" aria-label="mobile snake controls">
+        <button class="ctrl-btn" data-dir="up">↑</button>
+        <div class="ctrl-row">
+          <button class="ctrl-btn" data-dir="left">←</button>
+          <button class="ctrl-btn" data-dir="down">↓</button>
+          <button class="ctrl-btn" data-dir="right">→</button>
+        </div>
+      </div>
+    </div>
+      <!-- javascript -->
     <script src="snake.js"></script>
+    <script src="/scripts/header.js"></script>
   </body>
 </html>
