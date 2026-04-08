@@ -1,0 +1,2 @@
+The duplication of 9 is : 18This is the triple of 10 : 30
+This is on a new line.
