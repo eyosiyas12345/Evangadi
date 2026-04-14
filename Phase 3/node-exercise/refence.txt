@@ -1,0 +1,6 @@
+const databaseKey = mysql.createConnection({
+  host: 'localhost',
+  user: 'eyosiyas',
+  password:'VY2/u2zro)p-Zqzk',
+  database: 'evangadi'
+});
