@@ -23,29 +23,29 @@ app.get("/",(req,res)=>{
 }).listen('8080', (err)=>{console.log("Listening...")});
 
 app.post("/addiphone", (req,res)=>{
-  console.log(req.body);
   let iphoneName = req.body.iphone_name;
   let iphoneUrl = req.body.iphone_url;
   console.log("request received");
 
 
-  const queryCreateTable = `CREATE TABLE iphone (
-  iphone_id INT AUTO_INCREMENT, 
-  iphone_name VARCHAR(50), 
-  iphone_url VARCHAR(50),
-  PRIMARY KEY(iphone_id)
-  )`;
-  
-  databaseKey.query(queryCreateTable, (err,result)=>{
-    if(err) throw err;
-    console.log('table created');
-  });
-  
-  const queryInsertData = `INSERT INTO iphone (iphone_name, iphone_url) VALUES (${iphoneName},${iphoneUrl})`;
-  databaseKey.query(queryInsertData, (err,result)=>{
-    if(err) throw err;
-    console.log('inserted form input');
-  });
+//CREATE TABLE
+    const queryCreateTable = `CREATE TABLE IF NOT EXISTS iphone (
+    iphone_id INT AUTO_INCREMENT, 
+    iphone_name VARCHAR(50), 
+    iphone_url VARCHAR(50),
+    PRIMARY KEY(iphone_id)
+    )`;
+    databaseKey.query(queryCreateTable, (err,result)=>{
+      if(err) throw err;
+      console.log('table created');
+    });
+    
+  //INSERT DATA
+    const queryInsertData = `INSERT INTO iphone (iphone_name, iphone_url) VALUES ("${iphoneName}","${iphoneUrl}")`;
+    databaseKey.query(queryInsertData, (err,result)=>{
+      if(err) throw err;
+      console.log('inserted form input');
+    });
 });
 
 
