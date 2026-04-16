@@ -102,7 +102,7 @@ section .links ul li a::after{
 }
 /* iphone  11 pro */
 #iphone-11-pro-section{
-  background-image: url("../images/home/iphone11-pro-bg.jpg");
+  background-image: url("./assets/images/home/iphone11-pro-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -123,7 +123,7 @@ section .links ul li a::after{
 }
 /* iphone 11 section */
 #iphone-11-section{
-  background-image: url("../images/home/iphone11-bg.jpg");
+  background-image: url("./assets/images/home/iphone11-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -176,18 +176,18 @@ section .links ul li a::after{
 }
 /* watch-card */
 .watch-card{
-    background-image: url("../images/home/watch-series-5.jpg");
+    background-image: url("./assets/images/home/watch-series-5.jpg");
     grid-area: watch;
     margin-inline: 2rem;
 }
 /*card-card*/
 .card-card{
-  background-image: url("../images/home/apple-card.jpg");
+  background-image: url("./assets/images/home/apple-card.jpg");
   margin-right: 2rem;
 }
 /* tv-card */
 .tv-card{
-  background-image: url("../images/home/apple-tv-background.jpg");
+  background-image: url("./assets/images/home/apple-tv-background.jpg");
   margin-inline: 2rem;
   padding: 10px;
   display: flex;
@@ -207,7 +207,7 @@ section .links ul li a::after{
   padding-left: 15px;
 }
 .airpod-card{
-  background-image: url("../images/home/air-pods.jpg");
+  background-image: url("./assets/images/home/air-pods.jpg");
   background-size: initial;
   background-position: bottom;
   background-color: #000;
@@ -223,7 +223,7 @@ color: rgb(232, 219, 197);
 }
 /* mac-pro-card */
 .macbook-pro-card{
-  background-image: url("../images/home/macbook-pro.jpg");
+  background-image: url("./assets/images/home/macbook-pro.jpg");
   background-color: #fafafa;
   background-size: initial;
   background-position: bottom;
@@ -236,7 +236,7 @@ color: rgb(232, 219, 197);
 /* ipad-card */
 .ipad-card{
   /* background-color: rgb(243, 243, 243); */
-  background-image: url("../images/home/new-ipad.jpg");
+  background-image: url("./assets/images/home/new-ipad.jpg");
   background-size: cover;
   margin-right: 2rem;
 

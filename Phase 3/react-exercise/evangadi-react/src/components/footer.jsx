@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import flag from '../assets/images/icons/16.png';
 
 function Footer() {
   return (
@@ -157,7 +158,7 @@ function Footer() {
             </div>
             <div>
               <div className="flag-container">
-                <img src="images/icons/16.png"/>
+                <img src={flag}/>
               </div>
               <p>United States</p>
             </div>
