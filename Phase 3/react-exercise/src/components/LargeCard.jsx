@@ -1,13 +1,13 @@
 import React from 'react'
 
-function ThirdSection() {
+function LargeCard(props) {
   return (
         // <!-- iphone 11 -->
-    <section id="iphone-11-section" className="bg-img">
+    <section id={props.id}>
       <div className="texts">
-        <div className="name">iPhone 11</div>
-        <div className="phone-advert">Just the right amount of everything.</div>
-        <div className="phone-price">From $16.62/mo. or $399 with trade-in.</div>
+        <div className="name">{props.name}</div>
+        <div className="phone-advert">{props.advert}</div>
+        <div className="phone-price">{props.price}</div>
         <div className="links">
           <ul>
             <li>
@@ -23,4 +23,4 @@ function ThirdSection() {
   )
 }
 
-export default ThirdSection
+export default LargeCard

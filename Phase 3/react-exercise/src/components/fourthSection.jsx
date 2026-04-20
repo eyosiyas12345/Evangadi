@@ -12,7 +12,7 @@ function FourthSection() {
       {/* <!-- watch --> */}
       <div className="grid-card watch-card">
         <div className="logo">
-          <img src={watchLogo} alt="watch logo" />
+          <img src={watchLogo} />
         </div>
         <div className="description">
           <p>With the new Always-On Retina display.</p>

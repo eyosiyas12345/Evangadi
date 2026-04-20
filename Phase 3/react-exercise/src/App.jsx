@@ -1,7 +1,6 @@
-import Header from './components/header';
+import Header from './components/header/Header';
 import FirstSection from './components/firstSection';
-import SecondSection from './components/secondSection';
-import ThirdSection from './components/thirdSection';
+import UpperSections from './components/UpperSections';
 import FourthSection from './components/fourthSection';
 import Footer from './components/footer';
 import './App.css';
@@ -12,8 +11,7 @@ function App() {
     <>
       <Header/>
       <FirstSection/>
-      <SecondSection/>
-      <ThirdSection/>
+      <UpperSections/>
       <FourthSection/>
       <Footer/>
     </>
