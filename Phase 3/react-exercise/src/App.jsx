@@ -1,21 +1,22 @@
-import Header from './components/header/Header';
-import FirstSection from './components/firstSection';
-import UpperSections from './components/UpperSections';
-import FourthSection from './components/fourthSection';
-import Footer from './components/footer';
+import React from 'react';
+import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import Shared from './components/Shared';
+import Home from './pages/Home';
 import './App.css';
+import NoPage from './pages/NoPage';
 
 function App() {
 
   return (
-    <>
-      <Header/>
-      <FirstSection/>
-      <UpperSections/>
-      <FourthSection/>
-      <Footer/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Shared/>}>
+          <Route index element={<Home/>}/>
+          <Route path="*" element={<NoPage/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
-export default App
+export default App;

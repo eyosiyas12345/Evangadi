@@ -4,6 +4,7 @@ import searchIcon from '../../assets/images/icons/search-icon.png';
 import cartIcon from '../../assets/images/icons/cart.png';
 import Navlink from './Navlink';
 import Iconlink from './Iconlink';
+import Mac from '../../pages/Mac'
 
 function Header() {
   return (
@@ -11,16 +12,21 @@ function Header() {
       <div className="container">
         <ul>
 
-          <Iconlink icon={logo}/>
-          <Navlink linkName = "Mac"/>
-          <Navlink linkName = "iphone"/>
-          <Navlink linkName = "ipad"/>
-          <Navlink linkName = "watch"/>
-          <Navlink linkName = "tv"/>
-          <Navlink linkName = "Music"/>
-          <Navlink linkName = "Support"/>
-          <Iconlink icon={searchIcon}/>
-          <Iconlink icon={cartIcon}/>
+          <Iconlink icon={logo} destiny="/"/>
+          <Navlink linkName = "Mac" destiny = "/mac"/>
+          <Navlink linkName = "iphone" destiny = "/iphone"/>
+          <Navlink linkName = "ipad"
+          destiny = "/ipad"/>
+          <Navlink linkName = "watch"
+          destiny = "/watch"/>
+          <Navlink linkName = "tv"
+          destiny = "/tv"/>
+          <Navlink linkName = "Music"
+          destiny = "/music"/>
+          <Navlink linkName = "Support"
+          destiny = "/support"/>
+          <Iconlink icon={searchIcon} destiny="/search"/>
+          <Iconlink icon={cartIcon} destiny="/cart"/>
           
            <li className="menu-bar"><a href="#">
             <i className="fa fa-bars" aria-hidden="true"></i>

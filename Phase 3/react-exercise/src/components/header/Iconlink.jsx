@@ -3,7 +3,7 @@ import React from 'react'
 function Iconlink(props) {
   return (
             <li>
-                <a href="#"><img src={props.icon} /></a>
+                <Link to={props.destiny}><img src={props.icon} /></Link>
             </li>
   );
 }
