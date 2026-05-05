@@ -1,5 +1,5 @@
 import React from 'react'
-import LargeCard from './LargeCard';
+import LargeCard from '../../components/LargeCard';
 
 function UpperSections() {
   return (
@@ -15,7 +15,7 @@ function UpperSections() {
     price="From $16.62/mo. or $399 with trade-in."
     />
     </>
-  )
+  );
 }
 
 export default UpperSections

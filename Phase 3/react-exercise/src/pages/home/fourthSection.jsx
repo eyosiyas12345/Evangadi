@@ -1,9 +1,9 @@
 import React from 'react';
-import watchLogo from '../assets/images/icons/watch-series5-logo.png'
-import servantLogo from '../assets/images/icons/servant-logo.png';
-import appleCard from '../assets/images/icons/apple-card-logo.png';
-import ipadLogo from '../assets/images/icons/new-ipad-logo.png';
-import tvLogo from '../assets/images/icons/apple-tv-logo.png';
+import watchLogo from '../../assets/images/icons/watch-series5-logo.png'
+import servantLogo from '../../assets/images/icons/servant-logo.png';
+import appleCard from '../../assets/images/icons/apple-card-logo.png';
+import ipadLogo from '../../assets/images/icons/new-ipad-logo.png';
+import tvLogo from '../../assets/images/icons/apple-tv-logo.png';
 
 function FourthSection() {
   return (

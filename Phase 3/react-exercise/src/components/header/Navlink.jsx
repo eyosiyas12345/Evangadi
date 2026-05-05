@@ -11,4 +11,4 @@ function Navlink(props) {
   );
 }
 
-export default Navlink
+export default Navlink;

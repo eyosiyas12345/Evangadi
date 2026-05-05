@@ -4,7 +4,7 @@ import searchIcon from '../../assets/images/icons/search-icon.png';
 import cartIcon from '../../assets/images/icons/cart.png';
 import Navlink from './Navlink';
 import Iconlink from './Iconlink';
-import Mac from '../../pages/Mac'
+import Mac from '../../pages/mac/Mac'
 
 function Header() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import macbookPro from '../assets/images/home/macbook-pro.jpg';
+import macbookPro from '../../assets/images/home/macbook-pro.jpg';
 
 function FirstSection() {
   return (
